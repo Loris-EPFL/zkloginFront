@@ -1,5 +1,5 @@
 {
-    "URL_ZK_PROVER": "http://localhost:5001",
+    "URL_ZK_PROVER": "http://188.166.161.63/prover-fe/v1",
     "URL_SALT_SERVICE": "http://localhost:5002",
     "CLIENT_ID_GOOGLE": "404103068254-jsrtfh9s4kc2d8m8beq250d5ul8f7r5n.apps.googleusercontent.com",
     "CLIENT_ID_TWITCH": "YOUR_TWITCH_CLIENT_ID",

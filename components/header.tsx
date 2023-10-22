@@ -1,5 +1,6 @@
 import * as React from 'react';
-import logo from '../image/dai-logo.png';
+import logo from '../image/items.png';
+ 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -18,7 +19,7 @@ import { App } from '../src/app/App';
 
 
 
-export default function MenuAppBar() {
+export default function MenuAppBar({children}) {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
@@ -48,19 +49,20 @@ export default function MenuAppBar() {
           >
               <Image src={logo} 
               alt="" 
-              width={50}
-              height={50}/>
+              width={150}
+              height={150}/>
           </IconButton>
           <Typography variant="h6" component="div" paddingX={3} color={'#ffffff'}>
-            Vault
+            Fidel
           </Typography>
           <Typography variant="h6" component="div" paddingX={3} color={'#ffffff'}>
-            About
+            Stamps
           </Typography>
           <Typography variant="h6" component="div" paddingX={3} color={'#ffffff'}>
-            Vote
+            Favorites Shops
           </Typography>
           <Grid item xs display={'flex'} justifyContent={'flex-end'}>
+            {children}
               
           </Grid>
         </Toolbar>
